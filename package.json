@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "vite": "vite",
-    "build": "vite build"
+    "build": "vue-tsc --noEmit && vite build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
   "homepage": "https://github.com/wangtongmeng/vite-vue-ts#readme",
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.4",
-    "vite": "^4.4.9"
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vue-tsc": "^1.8.8"
   },
   "dependencies": {
     "vue": "^3.3.4"
