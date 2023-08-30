@@ -17,6 +17,7 @@ defineProps<{ msg: string }>()
   <a :class="styleCss.link">外联样式</a>
   <h2>less</h2>
   <h3>sass</h3>
+  <div class="postcss"></div>
 </template>
 
 <style scoped>
@@ -40,5 +41,13 @@ h2 {
 // $color: red;
 h3 {
   color: $color;
+}
+</style>
+<style scoped>
+.postcss {
+  height: 30px;
+  width: 60px;
+  background-color: orange;
+  transform: rotate(25deg);
 }
 </style>
