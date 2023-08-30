@@ -7,7 +7,8 @@
     "vite": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "lint": "eslint --ext .ts,.tsx,vue src/** --no-error-on-unmatched-pattern --quiet",
-    "lint:fix": "eslint --ext .ts,.tsx,vue src/** --no-error-on-unmatched-pattern --quiet --fix"
+    "lint:fix": "eslint --ext .ts,.tsx,vue src/** --no-error-on-unmatched-pattern --quiet --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,8 @@
   },
   "homepage": "https://github.com/wangtongmeng/vite-vue-ts#readme",
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "@vitejs/plugin-vue": "^4.3.4",
@@ -29,6 +32,8 @@
     "eslint": "^8.48.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.17.0",
+    "husky": ">=7",
+    "lint-staged": ">=10",
     "mrm": "^4.1.17",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
@@ -37,5 +42,8 @@
   },
   "dependencies": {
     "vue": "^3.3.4"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,vue}": "eslint --cache --fix"
   }
 }
