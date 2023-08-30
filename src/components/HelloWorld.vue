@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import {ref} from 'vue'
-  import logoUrl from '../assets/logo.png'
-  const count = ref(0)
+import { ref } from "vue"
+import logoUrl from "../assets/logo.png"
+const count = ref(0)
 
-  defineProps<{msg: string}>()
+defineProps<{ msg: string }>()
 </script>
 <template>
   <h1>{{ msg }}</h1>

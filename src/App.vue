@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import msg from './msg';
+import HelloWorld from "./components/HelloWorld.vue"
+import msg from "./msg"
 </script>
 
 <template>
