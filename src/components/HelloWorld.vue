@@ -9,6 +9,6 @@ defineProps<{ msg: string }>()
   <h1>{{ msg }}</h1>
   <img :src="logoUrl" />
   <div>
-    <button type="button">count is: {{ count }}</button>
+    <button type="button" @click="count++">count is: {{ count }}</button>
   </div>
 </template>
