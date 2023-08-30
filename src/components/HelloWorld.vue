@@ -1,14 +1,18 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import logoUrl from "../assets/logo.png"
+// import logoUrl from "../assets/logo.png"
+import logoUrl from "@/assets/logo.png"
 import styleCss from "./HelloWorld.module.css"
+
 const count = ref(0)
 
 defineProps<{ msg: string }>()
 </script>
 <template>
+  <div class="logo"></div>
   <h1>{{ msg }}</h1>
   <img :src="logoUrl" />
+  <img src="@/assets/logo.png" style="width: 50px" />
   <div>
     <button type="button" @click="count++">count is: {{ count }}</button>
   </div>
@@ -23,6 +27,12 @@ defineProps<{ msg: string }>()
 <style scoped>
 a {
   color: red;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(@/assets/logo.png);
+  background-size: contain;
 }
 </style>
 
