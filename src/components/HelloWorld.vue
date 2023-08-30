@@ -31,13 +31,13 @@ a {
 }
 </style>
 <style scoped lang="less">
-@color: red;
+// @color: red;
 h2 {
   color: @color;
 }
 </style>
 <style scoped lang="scss">
-$color: red;
+// $color: red;
 h3 {
   color: $color;
 }

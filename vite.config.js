@@ -8,5 +8,15 @@ export default defineConfig({
       "@": resolve("src")
     }
   },
-  plugins: [vue()]
+  plugins: [vue()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/styles/theme.scss";'
+      },
+      less: {
+        additionalData: '@import "@/styles/theme.less";'
+      }
+    }
+  }
 })
