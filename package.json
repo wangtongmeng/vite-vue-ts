@@ -1,0 +1,28 @@
+{
+  "name": "vite-vue-ts",
+  "version": "1.0.0",
+  "description": "Vite2+Vue3+Typescript 搭建开发环境",
+  "main": "index.js",
+  "scripts": {
+    "vite": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangtongmeng/vite-vue-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangtongmeng/vite-vue-ts/issues"
+  },
+  "homepage": "https://github.com/wangtongmeng/vite-vue-ts#readme",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.4",
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  }
+}
