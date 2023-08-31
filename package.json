@@ -4,8 +4,10 @@
   "description": "Vite2+Vue3+Typescript 搭建开发环境",
   "main": "index.js",
   "scripts": {
-    "vite": "vite",
+    "vite": "vite --mode production",
     "build": "vue-tsc --noEmit && vite build",
+    "build:dev": "vue-tsc --noEmit && vite build --mode development",
+    "build:prod": "vue-tsc --noEmit && vite build --mode production",
     "lint": "eslint --ext .ts,.tsx,vue src/** --no-error-on-unmatched-pattern --quiet",
     "lint:fix": "eslint --ext .ts,.tsx,vue src/** --no-error-on-unmatched-pattern --quiet --fix",
     "prepare": "husky install"
