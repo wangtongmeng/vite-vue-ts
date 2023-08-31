@@ -5,6 +5,7 @@ import msg from "./msg"
 
 <template>
   <HelloWorld :msg="msg.text" />
+  <router-view></router-view>
 </template>
 
 <style></style>
